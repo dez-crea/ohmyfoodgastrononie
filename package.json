@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfoodgastrononie",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassRooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dez-crea/ohmyfoodgastrononie.git"
+  },
+  "author": "Paul BONI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dez-crea/ohmyfoodgastrononie/issues"
+  },
+  "homepage": "https://github.com/dez-crea/ohmyfoodgastrononie#readme",
+  "dependencies": {
+    "sass": "^1.50.0"
+  }
+}
