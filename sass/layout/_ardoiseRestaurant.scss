@@ -1,5 +1,6 @@
 @use "../utils/zoom.scss";
 .ardoiseRestaurant{
+  counter-reset: steps;
     ol{
       display: flex;
       gap: 1rem;
@@ -8,9 +9,18 @@
       }
     }
     .animation{
+      &::before{
+         content: counter(steps);
+         counter-increment: (steps);
+         color: white;
+         background-color: #945cd9;
+         padding: 0.5em; 
+      }
+      list-style-type: none;
         border-radius: 1,17rem;
         background-color: #f6f6f6;
-        padding: 1.5rem 2rem;
+        padding: 1.5rem 2rem; 
+        border-radius: 50px;
         flex-grow: 1;
       @include base-shadow;
         &:hover{
