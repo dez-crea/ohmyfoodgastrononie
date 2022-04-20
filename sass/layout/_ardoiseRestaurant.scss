@@ -1,0 +1,31 @@
+@use "../utils/zoom.scss";
+.ardoiseRestaurant{
+    ol{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    
+      @media (max-width:800px) {
+        flex-direction: column;
+      }
+    }
+    .animation{
+        border-radius: 2rem;
+        background-color: #f6f6f6;
+        padding: 1rem 2rem;
+        border: 1px solid red;
+        flex-grow: 1;
+        @include base-shadow;
+        &:hover{
+          @include zoom;
+        }
+      }
+      
+      
+    
+ } 
+
+
+
+    
+  

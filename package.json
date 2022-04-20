@@ -16,7 +16,12 @@
     "url": "https://github.com/dez-crea/ohmyfoodgastrononie/issues"
   },
   "homepage": "https://github.com/dez-crea/ohmyfoodgastrononie#readme",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "compiler": "^0.1.2",
+    "live": "^0.1.25-beta.0",
+    "node": "^17.7.2"
   }
 }
