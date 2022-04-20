@@ -2,7 +2,6 @@
 .ardoiseRestaurant{
     ol{
       display: flex;
-      flex-wrap: wrap;
       gap: 1rem;
     
       @media (max-width:800px) {
@@ -10,14 +9,16 @@
       }
     }
     .animation{
-        border-radius: 2rem;
+        border-radius: 1,27rem;
         background-color: #f6f6f6;
-        padding: 1rem 2rem;
-        border: 1px solid red;
+        padding: 1.5 rem 2rem;
         flex-grow: 1;
         @include base-shadow;
         &:hover{
           @include zoom;
+        }
+        & i.fas{
+          margin-right: 2.5rem;
         }
       }
       
