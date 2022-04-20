@@ -3,26 +3,24 @@
     ol{
       display: flex;
       gap: 1rem;
-    
       @media (max-width:800px) {
         flex-direction: column;
       }
     }
     .animation{
-        border-radius: 1,27rem;
+        border-radius: 1,17rem;
         background-color: #f6f6f6;
-        padding: 1.5 rem 2rem;
+        padding: 1.5rem 2rem;
         flex-grow: 1;
-        @include base-shadow;
+      @include base-shadow;
         &:hover{
           @include zoom;
         }
         & i.fas{
-          margin-right: 2.5rem;
+          margin: 1rem;
         }
       }
-      
-      
+       
     
  } 
 
