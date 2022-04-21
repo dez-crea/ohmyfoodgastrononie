@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat&family=Raleway&family=Roboto+Serif:wght@800;900&family=Roboto+Slab:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat&family=Raleway&family=Roboto+Serif:wght@800;900&family=Roboto+Slab:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,700&family=Shrikhand&display=swap");
 *,
 *::before,
 *::after {
@@ -19,7 +21,6 @@ main {
 }
 .explorationGastro h2 {
   margin-top: 2rem;
-  font-size: 2rem;
 }
 .explorationGastro p {
   font-size: 1rem;
@@ -58,7 +59,7 @@ main {
 }
 .explorationGastro H1 {
   display: block;
-  font-size: 2em;
+  font-size: 1em;
   -webkit-margin-before: 0.67em;
   margin-block-start: 0.67em;
   -webkit-margin-after: 0.67em;
@@ -111,7 +112,6 @@ main {
 
 .ardoiseRestaurant ol {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 @media (max-width: 800px) {
@@ -120,13 +120,40 @@ main {
   }
 }
 .ardoiseRestaurant .animation {
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   background-color: #f6f6f6;
-  padding: 1rem 2rem;
-  border: 1px solid red;
+  flex-grow: 1;
+  list-style-type: none;
+  border-radius: 1,rem;
+  background-color: #f6f6f6;
+  border-radius: 50px;
   flex-grow: 1;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
+ li i.fas{
+  margin: 2rem;
+  color: black;
+  width: 0.5rem; 
+  height: 0.5rem;
+  border-radius: 50%;
+ }
+ li button .numero{
+  margin: 2rem;
+  color: white;
+  background-color: #935bd9;
+  width: 0.5rem; 
+  height: 0.5rem;
+  border-radius: 60%;
+ }
+ li button .{
+  margin: 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #935bd9;
+  width: 0.5rem; 
+  height: 0.5rem;
+  border-radius: 60%;
+ }
 .ardoiseRestaurant .animation:hover {
   transform: scale(1.02);
 }

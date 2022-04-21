@@ -1,4 +1,4 @@
-@use "../utils/zoom.scss";
+@use "./sass/utils/zoom.scss";
 .ardoiseRestaurant{
   counter-reset: steps;
     ol{
@@ -8,16 +8,26 @@
         flex-direction: column;
       }
     }
+    &::before{
+      content: counter(steps);
+      counter-increment: (steps);
+    }
+     
+   }
+          &{
+            padding: 0.5rem;
+            margin: 0.5rem 0 1rem 0.75rem;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+            border-radius: 1.25rem;
+            background-color: #f6f6f6;
+            display: flex;
+            position: relative;
+    }
+
     .animation{
-      &::before{
-         content: counter(steps);
-         counter-increment: (steps);
-         color: white;
-         background-color: #945cd9;
-         padding: 0.5em; 
-      }
+      
       list-style-type: none;
-        border-radius: 1,17rem;
+        border-radius: 1,rem;
         background-color: #f6f6f6;
         padding: 1.5rem 2rem; 
         border-radius: 50px;
@@ -28,10 +38,21 @@
         }
         & i.fas{
           margin: 1rem;
-        }
+          color: black;
+          width: 1rem; 
+          height: 1rem;
+          border-radius: 30%;
       }
-       
-    
+      li button .numero{
+        margin: 2rem;
+        font-size: 1rem;
+        color: white;
+        background-color: #935bd9;
+        width: 0.5rem; 
+        height: 0.5rem;
+        border-radius: 60%;
+       }
+         
  } 
 
 

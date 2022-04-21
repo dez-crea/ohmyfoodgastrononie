@@ -1,14 +1,13 @@
-@use ; "../utils/box-shadow.scss";
+@use "../utils/box-shadow.scss";
 .explorationGastro {
     text-align: center;
 
   & h2 {
     margin-top: 2rem;
-    font-size: 2rem;
   }
   
   & p {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .gradient {
@@ -16,7 +15,7 @@
     padding: 0.75rem 1.5rem;
     font-weight: 500;
     font-size: 1.1rem;
-    border-radius: 100px;
+    border-radius: 75px;
     color: #fff;
     background-color: #686868;
     background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
