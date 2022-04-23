@@ -9,6 +9,7 @@
 
 body{
   margin: 0px;
+  font-family: "roboto", sans-serif;
 }
 
 header{
@@ -16,5 +17,20 @@ header{
   text-align: center;
   box-shadow: 0 0 0.5rem  #d9d9d9;
   padding: 0.3rem;
+  position: relative;
 }
  
+main .gastro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+main .gastro{
+ font-size: 1.5rem;
+}
