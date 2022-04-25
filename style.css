@@ -1,10 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat&family=Raleway&family=Roboto+Serif:wght@800;900&family=Roboto+Slab:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,700&family=Shrikhand&display=swap");
-@use "./sass/base.scss";
-@use ".sass/layout/header.scss";
-@use ".sass/layout/gastro.scss";
-@use ".sass/layout/gradient.scss";
-@use ".sass/layout/exploitationGastro.scss";
-@use ".sass/layout/menus.scss";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main{
+  padding: 0 1rem;
+}
+
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0 0 0.5rem #dfdfdf;
+  padding: 0.3rem;
+  position: relative;
+}
+/*# sourceMappingURL=header.css.map */
+
+main .gastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #f3f3f3;
+    text-align: center;
+    margin: 0;
+  }
+  
+  main .gastro{
+   font-size: 1.5rem;
+  }
+
+  .gradient {
+    border: 0;
+    padding: 1.05rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 75px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    cursor: pointer;
+    transition-duration: 0.25s;
+    box-shadow: 0.25rem 0.25rem 14px rgba(0, 0, 0, 0.25);
+    transition: transform 200ms;
+    margin-top: 1rem;
+    @include base-shadow;
+  }
+  
+  button .gradient {
+    transform: scale(1.02);
+    opacity: 0.9;
+    color: white;
+    font-size: 1,5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    transition: transform 200ms;
+    magine-top: 1rem;
+    @include base-shadow;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-color: rgba(66,153,225,0.5);
+    --tw-ring-offset-shadow: 0 0 transparent;
+    --tw-ring-shadow: 0 0 transparent;
+    *, :after, :before {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: currentColor;
+  }
+  }
+  
+  button:hover {
+    transform: scale(1.02);
+    opacity: 0.10;
+  }
+
+  .explorationGastro{
+    text-align: center;
+  }
+  .explorationGastro h2{
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .explorationGastro p{
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .menus{
+    background-color: #f6f6f6;
+}
