@@ -1,17 +1,10 @@
-/* Error: @use rules must be written before any other rules.
- *   ,
- * 4 | @use "./sass/base.scss";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   style.scss 4:1  root stylesheet */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat&family=Raleway&family=Roboto+Serif:wght@800;900&family=Roboto+Slab:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,700&family=Shrikhand&display=swap");
+@use "./sass/base.scss";
+@use ".sass/layout/header.scss";
+@use ".sass/layout/gastro.scss";
+@use ".sass/layout/gradient.scss";
+@use ".sass/layout/exploitationGastro.scss";
+@use ".sass/layout/menus.scss";
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: @use rules must be written before any other rules.\a   \2577 \a 4 \2502  @use "./sass/base.scss";\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   style.scss 4:1  root stylesheet';
-}
+/*# sourceMappingURL=style.css.map */
