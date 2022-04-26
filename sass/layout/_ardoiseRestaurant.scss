@@ -1,0 +1,13 @@
+
+  .ardoiseRestaurant li{
+    background-color: #fcfcfc;
+    padding: 1rem 2rem;
+    border: 1px solid red;
+    flex-grow: 1;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  }
+  .ardoiseRestaurant li :hover{
+    transform: scale(1.02);
+    @include zoom;
+  }
