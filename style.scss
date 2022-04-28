@@ -2,18 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat&family=Raleway&family=Roboto+Serif:wght@800;900&family=Roboto+Slab:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,700&family=Shrikhand&display=swap");
 
 
-@import "sass/sass/utils/box-shadow";
-@import "sass/sass/utils/zoom";
-@import "sass/base";
-@import "sass/layout/header";
-@import "sass/layout/_gastro";
-@import "sass/layout/gradients";
-@import "sass/layout/explorationGastro";
-@import "sass/layout/ardoiseRestaurant";
-@import "sass/layout/menus";
+@import "sass/_base.scss";
+@import "sass/layout/_header.scss";
+@import "sass/layout/_gastro.scss";
+@import "sass/layout/_gradient.scss";
+@import "sass/layout/_explorationGastro.scss";
+@import "sass/layout/_ardoiseRestaurant.scss";
+@import "sass/layout/_menus.scss";
+@import "sass/utils/_box-shadow.scss";
+@import "sass/utils/_zoom.scss";
+@import "sass/utils/_variables.scss";
 
 
 
+ 
  
 
 

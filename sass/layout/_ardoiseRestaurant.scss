@@ -1,13 +1,65 @@
+@import "../utils/_box-shadow.scss";
+@import "../utils/_zoom.scss";
 
-  .ardoiseRestaurant li{
-    background-color: #fcfcfc;
-    padding: 1rem 2rem;
-    border: 1px solid red;
-    flex-grow: 1;
-    border-radius: 1rem;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  }
-  .ardoiseRestaurant li :hover{
-    transform: scale(1.02);
-    @include zoom;
-  }
+
+.ardoiseRestaurant{
+    counter-reset: comptelistes; 
+    
+    & ol{
+        display:flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+    & li{
+        position: relative;
+      
+        ::before{
+          content: counter(comptelistes); 
+          counter-increment: comptelistes;
+          color: width;
+          background-color: #935bd9;
+          width: 2rem;
+          height: 2rem;
+          display: grid;
+          place-items: center;  
+          border-radius: 50%;
+          position: absolute;
+         left: -1rem;
+         bottom: 1rem;
+
+        }
+        list-style-type: none;
+        padding: 1.2rem 2rem;
+        background-color: #f6f6f6;
+        border: 1px solid beige;
+        flex-grow: 1;
+        border-radius: 1rem;
+        @include base-shadow;
+        &:hover{
+          color: #fff;
+        box-shadow: inset 200px 0 0 0 #F1D9F9;;
+        }
+        i.fa, .far, .fas {
+            color: width;
+            margin-right: 1.5rem;
+        }
+        i.fas.fa-mobile-alt{
+            color: white;
+        }
+       i .fas.fa-store{
+        margin-right: 1rem;
+        color: width;
+        i ::before {
+            margin-right: 1rem;
+            color: width;
+        }
+       }
+        } 
+        }
+    
+
+
+
